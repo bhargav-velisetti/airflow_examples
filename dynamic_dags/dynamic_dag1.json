@@ -1,0 +1,29 @@
+{
+"dags": [
+            {
+                "dag_id": "dag1",
+                "isactive": true,
+                "schedule_interval": "1 1 * * *",
+                "tasks" : [ 
+                            {"task1" : "A"}, 
+                            {"task2" : "B"} 
+                        ]
+            },
+            {
+                "dag_id": "dag2",
+                "isactive": true,
+                "schedule_interval": "15 6 * * *",
+                "tasks" : [ 
+                            {"task1" : "C"} 
+                        ]
+            },
+            {
+                "dag_id": "dag3",
+                "isactive": false,
+                "schedule_interval": "30 10 * * *",
+                "tasks" : [ 
+                            {"task1" : "D"} 
+                        ]
+            }
+        ]
+}
