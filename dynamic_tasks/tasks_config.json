@@ -1,0 +1,39 @@
+{
+
+"tasks" :   [
+                {
+                    "pre" : "START",
+                    "current" : "A",
+                    "next": "B"
+                },
+                {
+                    "pre" : "A",
+                    "current" : "B",
+                    "next": "C"
+                },
+                {
+                    "pre" : "B",
+                    "current" : "C",
+                    "next": "D"
+                },
+                {
+                    "pre" : "C",
+                    "current" : "D",
+                    "next": "END"
+                }, 
+
+                {
+                    "pre" : "B",
+                    "current" : "E",
+                    "next": "END"
+                }, 
+
+
+                {
+                    "pre" : ["C","B", "A"],
+                    "current" : "F",
+                    "next": "END"
+                }
+            ]
+
+}
